@@ -12,4 +12,4 @@ const ListaImagenes = ({imagenes}) => {
     )
 }
 
-export default ImageList 
+export default ListaImagenes 
