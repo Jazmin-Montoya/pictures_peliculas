@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SearchBar from "./Components/SearchBar";
-import ImageList from "./Components/ImageList";
+import ListaImagenes from "./Components/ImageList";
 import searchImagenes from './api'
 
 function App(){
@@ -15,7 +15,7 @@ function App(){
     <>
       <h1>Pictures Películas</h1>
       <SearchBar onSubmit = {handleSubmit}/>
-      <ImageList image = {imagenes}/>
+      <ListaImagenes image = {imagenes}/>
     </>
   )
 }
