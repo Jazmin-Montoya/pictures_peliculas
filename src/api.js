@@ -1,16 +1,20 @@
 import axios from "axios";
 
 const searchImagenes = async (term) =>{
-    const url = 'https://api.unsplash.com/search/photos/?client_id=jqLiCioHqTmPpYqGqnwphauz_eFOJZ0YBwPdEa2pDV8'
-
-    const response = await axios.get(url,{
-        params:{
-            query: term
+    const fetchData = async(searchTerm) =>{
+            const response = await axios.get('http://omdbapi.com/',{
+                params:{
+                    apikey:'93660f9e',
+                    s:'avengers'
+                }
+            })
+            if(response.data.Error){
+                return[]
+            }
+            console.log(response.data.Search)
         }
-    })
-
-    console.log(response)
-    return response.data.results
+        
+        fetchData()
 }
 
 export default searchImagenes
