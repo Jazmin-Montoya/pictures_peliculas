@@ -15,7 +15,7 @@ function App(){
     <>
       <h1>Pictures Películas</h1>
       <SearchBar onSubmit = {handleSubmit}/>
-      <ListaImagenes image = {imagenes}/>
+      <ListaImagenes imagenes = {imagenes}/>
     </>
   )
 }
