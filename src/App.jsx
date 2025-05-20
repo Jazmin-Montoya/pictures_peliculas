@@ -13,7 +13,7 @@ function App() {
   }
   return(
     <>
-      <h1>Pictures App</h1>
+      <h1>Pictures Movies</h1>
       <SearchBar onSubmit={handleSubmit}/>
       <ImageList images={images}/>
     </>
