@@ -1,5 +1,3 @@
-import './ImageList.css'
-
 const ImageShow = ({imagenes}) =>{
     return(
         <div>
