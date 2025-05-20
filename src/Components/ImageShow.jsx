@@ -1,7 +1,7 @@
-const ImageShow = ({imagenes}) =>{
+const ImageShow = ({image}) =>{
     return(
         <div>
-            <img src = {imagenes.urls.small} alt={imagenes.alt_description}/>
+            <img src={image.urls.small} alt={image.alt_description}/>
         </div>
     )
 }
